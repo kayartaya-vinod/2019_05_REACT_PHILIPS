@@ -3,7 +3,7 @@ import React from 'react';
 const App = () => {
 
     const [name, setName] = React.useState('');
-    const [names, setNames] = React.useState(['Vinod', 'Shyam', 'John', 'Jane']);
+    const [names, setNames] = React.useState(['Vinod', 'Shyam', 'John']);
 
     const submitHandler = (e: any) => {
         e.preventDefault();
