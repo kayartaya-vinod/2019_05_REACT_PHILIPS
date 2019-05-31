@@ -4,6 +4,8 @@ import Footer from './components/Footer';
 import ContactCard from './components/ContactCard';
 import ContactList from './components/ContactList';
 import ContactForm from './components/ContactForm';
+import AppContext from './AppContext';
+
 
 const baseUrl = 'http://localhost:4000/contacts/';
 
@@ -27,7 +29,7 @@ class App extends Component {
     async componentDidMount() {
         const resp = await fetch(baseUrl + '?_sort');
         const contacts = await resp.json();
-        // contacts.sort((c1: any, c2: any) => c2.id - c1.id);
+        contacts.sort((c1: any, c2: any) => c2.id - c1.id);
         this.setState({ contacts });
     }
 
@@ -42,27 +44,32 @@ class App extends Component {
     }
 
     render() {
+
+        const store = {
+            contacts: this.state.contacts,
+            addContact: this.addContact,
+            deleteContact: this.deleteContact
+        };
+
         return (
-            <div className="container">
-                <Header />
-
-                <div className="row">
-                    <div className="col-md-3">
-                        <ContactForm addContact={this.addContact} />
+            <AppContext.Provider value={store}>
+                <div className="container">
+                    <Header />
+                    <div className="row">
+                        <div className="col-md-3">
+                            <ContactForm />
+                        </div>
+                        <div className="col-md-9">
+                            <ContactList />
+                        </div>
                     </div>
-                    <div className="col-md-9">
-                        <ContactList
-                            contacts={this.state.contacts}
-                            deleteContact={this.deleteContact} />
-                    </div>
+                    <Footer />
                 </div>
-
-
-
-                <Footer />
-            </div>
+            </AppContext.Provider >
         );
     }
 }
+
+
 
 export default App;

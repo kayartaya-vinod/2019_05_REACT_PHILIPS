@@ -811,15 +811,6 @@
       "picture": "http://kvinod.com/old_ci/randomdata/images/men/93.jpg"
     },
     {
-      "id": 94,
-      "name": "Chico Vigus",
-      "gender": "Male",
-      "email": "cvigus2l@spotify.com",
-      "phone": "2848941648",
-      "city": "Xam Nua",
-      "picture": "http://kvinod.com/old_ci/randomdata/images/men/94.jpg"
-    },
-    {
       "id": 95,
       "name": "Vern Buckley",
       "gender": "Male",
@@ -872,15 +863,6 @@
       "phone": "3376737233",
       "city": "Doctor Juan León Mallorquín",
       "picture": "http://kvinod.com/old_ci/randomdata/images/women/100.jpg"
-    },
-    {
-      "name": "John doe",
-      "gender": "Male",
-      "email": "john@example.com",
-      "phone": "595757333",
-      "city": "Dallas",
-      "picture": "/assets/images/default.png",
-      "id": 101
     },
     {
       "name": "Vinod Kumar",

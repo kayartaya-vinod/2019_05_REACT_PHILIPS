@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import ContactCard from './ContactCard';
 import loading from './loading';
+import consume from './consume';
 
-const ContactList = ({ contacts, deleteContact }: { contacts: Array<any>, deleteContact: any }) => {
+const ContactList = ({ contacts }: { contacts: Array<any> }) => {
     const contactCards = contacts.map(
-        (c: any) => <ContactCard
-            key={c.id} contact={c} deleteContact={deleteContact} />)
+        (c: any) => <ContactCard key={c.id} contact={c}  />)
 
     return (
         <div className="row">
@@ -14,4 +14,4 @@ const ContactList = ({ contacts, deleteContact }: { contacts: Array<any>, delete
     );
 }
 
-export default loading('contacts')(ContactList);
+export default consume('contacts')(loading('contacts')(ContactList));
