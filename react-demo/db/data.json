@@ -1,33 +1,6 @@
 {
   "contacts": [
     {
-      "id": 1,
-      "name": "Beverly Harvett",
-      "gender": "Female",
-      "email": "bharvett0@senate.gov",
-      "phone": "3243285464",
-      "city": "East Angus",
-      "picture": "http://kvinod.com/old_ci/randomdata/images/women/1.jpg"
-    },
-    {
-      "id": 5,
-      "name": "Aaron Vallentine",
-      "gender": "Male",
-      "email": "avallentine4@furl.net",
-      "phone": "2325126892",
-      "city": "Shuren",
-      "picture": "http://kvinod.com/old_ci/randomdata/images/men/5.jpg"
-    },
-    {
-      "id": 6,
-      "name": "Diane Priditt",
-      "gender": "Female",
-      "email": "dpriditt5@weibo.com",
-      "phone": "3808680918",
-      "city": "Solčava",
-      "picture": "http://kvinod.com/old_ci/randomdata/images/women/6.jpg"
-    },
-    {
       "id": 7,
       "name": "Judye Gras",
       "gender": "Female",

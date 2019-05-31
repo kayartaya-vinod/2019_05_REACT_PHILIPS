@@ -1,7 +1,6 @@
 import React from 'react';
 
 const App = () => {
-
     const [name, setName] = React.useState('');
     const [names, setNames] = React.useState(['Vinod', 'Shyam', 'John', 'Jane']);
 
@@ -24,7 +23,7 @@ const App = () => {
 
         <h3>There are {names.length} names!</h3>
         <form onSubmit={submitHandler} className="form">
-            <input type="text" className="form-control"
+            <input type="text" className="form-control" autoFocus
                 style={{ width: '300px' }}
                 value={name}
                 placeholder="Type a name and press ENTER key"
